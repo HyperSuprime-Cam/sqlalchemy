@@ -1,0 +1,11 @@
+--- SQLAlchemy-1.0.8.orig/setup.py	2015-10-02 12:55:42.000000000 -0700
++++ SQLAlchemy-1.0.8/setup.py	2015-10-02 12:57:32.000000000 -0700
+@@ -122,6 +122,8 @@
+         else:
+             kwargs['ext_modules'] = ext_modules
+ 
++    kwargs['zip_safe'] = False
++
+     setup(name="SQLAlchemy",
+           version=VERSION,
+           description="Database Abstraction Library",
